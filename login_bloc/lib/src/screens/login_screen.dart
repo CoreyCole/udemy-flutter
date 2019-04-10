@@ -64,7 +64,7 @@ class LoginScreen extends StatelessWidget {
       stream: bloc.submitValid,
       builder: (context, snapshot) {
         return RaisedButton(
-          child: Text('Logins'),
+          child: Text('Login'),
           color: Colors.blue,
           onPressed: !snapshot.hasData || snapshot.hasError || snapshot.data == false
             ? null
